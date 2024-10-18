@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>NbS Carbon Projects Dataset | West Africa</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1 class="main-title">NbS Carbon Projects Dataset | West Africa</h1>
+            <p class="intro-text">Data on planned nature-based solutions carbon offsetting projects across the West African region.</p>
+        </header>
+        <div class="container">
+            <a href="documentation.html" class="card card1">
+                <h2>Documentation</h2>
+                <p>Details on how the dataset was prepared and its intended uses</p>
+            </a>
+            <a href="dashboard.html" class="card card2">
+                <h2>Dashboard</h2>
+                <p>Visualisation of macro-trends (not supported on mobile devices)</p>
+            </a>
+            <a href="https://www.dropbox.com/scl/fi/en7bynexidmowo98xniys/NbS-Carbon-Projects-West-Africa-Verra.xlsx?rlkey=navm7nlof7wic2vk49hyu1tv6&st=iwi5y809&dl=0" class="card card3">
+                <h2>Download the dataset</h2>
+                <p>High-level Verra carbon project data for the West African region</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      background-color: #1e1e1e;
+      background-image: url(blurmangrove.png);
+      background-size: cover;
+      color: white;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+  }
+
+  .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+  }
+  
+  header {
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+  
+  .main-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+  }
+  
+  .intro-text {
+      font-size: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+  }
+  
+  .card {
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      padding: 1.5rem;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-decoration: none;
+      color: white;
+      display: block;
+  }
+  
+  .card:hover {
+      transform: translateY(-5px);
+      background-color: #3a3a3a;
+      text-decoration: none;
+  }
+  
+  .card h2,
+  .card p {
+      text-decoration: none;
+  }
+  
+  .card:hover h2,
+  .card:hover p {
+      text-decoration: none;
+  }
+  
+  h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+  }
+  
+  p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+      .container {
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+      }
+  
+      .card {
+          width: calc(33.33% - 1.33rem);
+      }
+  
+      .main-title {
+          font-size: 2.5rem;
+      }
+  
+      .intro-text {
+          font-size: 1.1rem;
+      }
+  }
+  </style>
